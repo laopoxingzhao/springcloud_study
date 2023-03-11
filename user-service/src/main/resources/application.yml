@@ -1,7 +1,15 @@
 server:
   port: 8083
 spring:
+
+  application:
+    name: user-service
+
   datasource:
     url: jdbc:mysql://43.138.112.22:3306/springcloud_study
     username: root
     password: zhaoyuyu102
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://localhost:8888/eureka
