@@ -2,13 +2,15 @@ server:
   port: 8082
 spring:
   application:
-    name: borrow-service
+    name: borrowservice
 
   datasource:
     url: jdbc:mysql://43.138.112.22:3306/springcloud_study
     username: root
     password: zhaoyuyu102
+    driver-class-name: com.mysql.cj.jdbc.Driver
 eureka:
   client:
     service-url:
-      defaultZone:  http://localhost:8888/eureka
+      defaultZone:  http://localhost:8888/eureka,http://localhost:8889/eureka
+
